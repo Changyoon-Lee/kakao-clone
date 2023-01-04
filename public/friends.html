@@ -1,0 +1,107 @@
+<!-- main page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakao Talk Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-400">
+    <div class="max-w-sm mx-auto h-screen bg-gray-50">
+        <div class="flex justify-between text-xs font-medium p-1">
+            <div>
+                <span>No Service</span>
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div>18:43</div>
+            <div>
+                <i class="fa-solid fa-lock"></i>
+                <span>11%</span>
+                <i class="fa-solid fa-battery-full"></i>
+                <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+        </div>
+        <header class="flex justify-between p-6">
+            <h1 class="text-2xl font-semibold">Friends</h1>
+            <div class="space-x-2 font-light">
+                <span><i class="fas fa-search fa-lg"></i></span>
+                <span><i class="fas fa-music fa-lg"></i></span>
+                <span><i class="fas fa-cog fa-lg"></i></span>
+            </div>
+        </header>
+        <a class="block bg-gray-100 rounded-md mx-3 py-1 text-center text-xs text-gray-300">
+            <i class="fas fa-info-circle"></i>
+            <span class="text-gray-600">Friends' Names Display</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+        </a>
+        <main class="flex flex-col mx-6 divide-y mb-10">
+            <div class="flex mt-2 mb-4 items-center">
+                <div class="profile__img"></div>
+                <span class="text-lg mx-4">lkingkongl</span>
+            </div>
+
+            <details open>
+                <summary class="summary_cls">
+                    <span>Channel</span>
+                    <i class="fas fa-chevron-down fa-xs"></i>
+                </summary>
+                <p>
+                <div class="flex justify-between items-center my-3">
+                    <div class="flex items-center">
+                        <div class="profile__img_sm"></div>
+                        <span> channel </span>
+                    </div>
+                    <div class="flex items-center space-x-1 text-gray-400">
+                        <span>2</span>
+                        <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                </div>
+                </p>
+            </details>
+
+            <details open>
+                <summary class="summary_cls">
+                    <span>Friends</span>
+                    <i class="fas fa-chevron-down fa-xs"></i>
+                </summary>
+                <p>
+                <div class="flex justify-between items-center my-3">
+                    <div class="flex items-center">
+                        <div class="profile__img_sm"></div>
+                        <span>kim park</span>
+                    </div>
+                    <div class="rounded-full border-green-400 border text-2xs px-2 py-0.5">Alone-하이라이트 (Highlight)
+                    </div>
+                </div>
+
+                </p>
+            </details>
+
+        </main>
+        <nav class="fixed bottom-0 right-0 left-0 max-w-sm m-auto">
+            <ul class="flex justify-around bg-gray-100 py-3 text-2xl">
+                <li><a href="friends.html">
+                        <i class="fa-solid fa-user"></i>
+                        <!-- <i class="fa-regular fa-user"></i> -->
+                    </a></li>
+                <li><a href="chats.html">
+                        <i class="fa-regular fa-comment"></i>
+                        <!-- <i class="fa-solid fa-comment"></i> -->
+                    </a></li>
+                <li><a href="find.html">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a></li>
+                <li><a href="settings.html">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/88eea5fb64.js" crossorigin="anonymous"></script>
+
+</html>

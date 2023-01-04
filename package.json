@@ -1,0 +1,24 @@
+{
+  "name": "kakao-clone",
+  "version": "1.0.0",
+  "description": "kakao clone coding with vanila js and tailwind css",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./css/styles.css -o ./public/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Changyoon-Lee/kakao-clone.git"
+  },
+  "author": "Changyoon-Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Changyoon-Lee/kakao-clone/issues"
+  },
+  "homepage": "https://github.com/Changyoon-Lee/kakao-clone#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4",
+    "watch": "^0.13.0"
+  }
+}

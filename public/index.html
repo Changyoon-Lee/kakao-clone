@@ -1,0 +1,46 @@
+<!-- main page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakao Talk Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-400">
+    <div class="max-w-sm mx-auto h-screen bg-gray-50">
+        <header class="flex justify-between text-xs font-medium p-1">
+            <div>
+                <span>No Service</span>
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div>18:43</div>
+            <div>
+                <i class="fa-solid fa-lock"></i>
+                <span>11%</span>
+                <i class="fa-solid fa-battery-full"></i>
+                <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+        </header>
+        <main class="flex flex-col">
+            <div class="flex flex-col justify-center my-16">
+                <h3 class="text-center text-gray-800 font-semibold text-xl mb-3">Welcome to KakaoTalk</h3>
+                <p class="text-center text-gray-500 text-sm">If you have a Kakao Account</p>
+                <p class="text-center text-gray-500 text-sm">log in with your email or phone number.</p>
+            </div>
+            <div>
+                <form action="friends.html" class="flex flex-col mx-5">
+                    <input name="username" class="form_input" type="text" placeholder="Email or phone number" />
+                    <input name="password" class="form_input" type="text" placeholder="Password" />
+                    <input class="form_submit" type="submit" value="Log In" />
+                    <a href="#" class="text-center text-xs hover:underline">Find Kokoa Account or Password</a>
+                </form>
+        </main>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/88eea5fb64.js" crossorigin="anonymous"></script>
+
+</html>
