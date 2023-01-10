@@ -1,0 +1,78 @@
+<!-- main page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakao Talk Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-400 text-gray-700">
+    <div class="slide-in relative max-w-2xl mx-auto h-screen bg-gray-50">
+        <div class="flex justify-between text-xs font-medium p-1">
+            <div>
+                <span>No Service</span>
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div>18:43</div>
+            <div>
+                <i class="fa-solid fa-lock"></i>
+                <span>11%</span>
+                <i class="fa-solid fa-battery-full"></i>
+                <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+        </div>
+        <header class="flex justify-between p-6 items-center">
+            <div><a href="more.html"><i class="fas fa-chevron-left"></i></a></div>
+            <h1 class="text-2xl font-semibold">Settings</h1>
+            <span><i class="fas fa-search fa-lg"></i></span>
+        </header>
+
+
+        <main class="flex flex-col mx-6 divide-y mb-10">
+            <ul class="flex flex-col divide-y border-gray-100">
+                <li class="text-lg flex items-center space-x-4 py-3">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Notices</span>
+                </li>
+                <li class="text-lg flex items-center space-x-4 py-3">
+                    <i class="fas fa-flask"></i>
+                    <span>Kokoa Lab</span>
+                </li>
+                <li class="text-lg flex items-center space-x-4 py-3">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Version</span>
+                </li>
+            </ul>
+        </main>
+        <nav class="absolute bottom-0 w-full">
+            <ul class="flex justify-around bg-gray-100 py-3 text-2xl">
+                <li><a href="friends.html">
+                        <i class="fas fa-user"></i>
+                        <!-- <i class="fa-regular fa-user"></i> -->
+                    </a></li>
+                <li class="relative"><a href="chats.html">
+                        <span
+                            class="absolute p-1 left-3 bottom-4 h-6 w-6 rounded-full bg-orange-600 text-center text-2xs text-white flex justify-center items-center">
+                            1</span>
+                        <i class="far fa-comment"></i>
+                        <!-- <i class="fa-solid fa-comment"></i> -->
+                    </a></li>
+                <li><a href="find.html">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a></li>
+                <li class="relative"><a href="more.html">
+                        <span class="absolute left-6 bottom-6 h-1.5 w-1.5 rounded-full bg-orange-600">
+                        </span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/88eea5fb64.js" crossorigin="anonymous"></script>
+
+</html>

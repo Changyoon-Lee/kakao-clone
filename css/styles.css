@@ -84,6 +84,19 @@ details[open] summary i {
 }
 
 /* 채팅매시지 입력창부분 */
+.left-chat {
+    @apply bg-white rounded-xl py-1 px-2 relative;
+   }
+.left-chat:after {
+    @apply border-t-[12px] border-t-white border-l-[12px] border-l-transparent absolute top-1 -left-1.5 content-[""];
+   }
+.right-chat {
+    @apply bg-yellow-300 rounded-xl py-1 px-2 relative;
+   }
+.right-chat:after {
+    @apply border-t-[12px] border-t-yellow-300 border-r-[12px] border-r-transparent absolute top-1 -right-1.5 content-[""];
+   }
+
 @keyframes fadeIn{
     from {
         transform: translateY(20px);
@@ -96,4 +109,32 @@ details[open] summary i {
 }
 .animate-fade-in {
     animation: fadeIn .5s linear;
+}
+
+
+@keyframes slide-left {
+from {
+    transform: translateX(100%);
+    visibility: visible;
+}
+
+to {
+    transform: translateX(0%);
+}
+}
+.slide-in {
+    animation: slide-left 0.3s ease-in-out forwards;
+}
+@keyframes slide-right {
+from {
+    transform: translateX(-100%);
+    visibility: visible;
+}
+
+to {
+    transform: translateX(0%);
+}
+}
+.slide-out {
+    animation: slide-right 0.3s ease-in-out forwards;
 }

@@ -1,0 +1,138 @@
+<!-- main page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakao Talk Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-400 text-gray-700">
+    <div class="relative max-w-2xl mx-auto h-screen bg-gray-50">
+        <div class="flex justify-between text-xs font-medium p-1">
+            <div>
+                <span>No Service</span>
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div>18:43</div>
+            <div>
+                <i class="fa-solid fa-lock"></i>
+                <span>11%</span>
+                <i class="fa-solid fa-battery-full"></i>
+                <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+        </div>
+        <header class="flex justify-between p-6">
+            <h1 class="text-2xl font-semibold">Find</h1>
+            <div class="space-x-2 font-light">
+                <span><i class="fas fa-search fa-lg"></i></span>
+                <span><i class="fas fa-cog fa-lg"></i></span>
+            </div>
+        </header>
+        <main class="flex flex-col mx-6 divide-y mb-10">
+            <div class="flex justify-around text-xs pt-6 pb-3">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-qrcode text-3xl"></i>
+                    <span class="flex items-center h-12">QR Code</span>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <i class="far fa-address-book text-3xl"></i>
+                    <span class="flex items-center h-12">Add by<br>Contacts</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-fingerprint text-3xl"></i>
+                    <span class="flex items-center h-12">Add by ID</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="far fa-envelope text-3xl"></i>
+                    <span class="flex items-center h-12">Invite</span>
+                </div>
+            </div>
+
+            <div class="text-sm text-gray-400 my-3">
+                <h6 class="my-3">Recommended Friends</h6>
+                <div class="h-32 flex items-center justify-center">You have no recommended friends</div>
+            </div>
+            <div class="text-sm text-gray-400 my-3">
+                <div class="my-3 flex justify-between items-center">
+                    <h6 class="">Open Chat</h6>
+                    <div class="flex items-center">
+                        <h6 class="font-light">Go to Openchat Home</h6>
+                        <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                </div>
+                <ul class="divide-y">
+                    <li class="flex justify-between items-center">
+                        <div class="flex flex-col py-5 space-y-1">
+                            <span class="text-gray-700 text-lg">#BTS</span>
+                            <span>#BTS#ARMT#FRIENDS</span>
+                            <div class="flex space-x-2 items-center">
+                                <div class="text-xs w-4 h-4 bg-gray-500 rounded-full"></div>
+                                <span>802 members</span>
+                                <span class="font-extrabold">|</span>
+                                <span class="text-pink-400">Active</span>
+                            </div>
+                        </div>
+                        <div class="w-20 h-20 rounded-lg bg-gray-400 relative">
+                            <div
+                                class="absolute bg-gray-700 opacity-70 flex justify-center items-center w-12 h-5 text-xs rounded-full space-x-1 right-2 bottom-2">
+                                <i class="text-white fa-solid fa-heart"></i>
+                                <span>325</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex justify-between items-center">
+                        <div class="flex flex-col py-5 space-y-1">
+                            <span class="text-gray-700 text-lg">#BTS</span>
+                            <span>#BTS#ARMT#FRIENDS</span>
+                            <div class="flex space-x-2 items-center">
+                                <div class="text-xs w-4 h-4 bg-gray-500 rounded-full"></div>
+                                <span>802 members</span>
+                                <span class="font-extrabold">|</span>
+                                <span class="text-pink-400">Active</span>
+                            </div>
+                        </div>
+                        <div class="w-20 h-20 rounded-lg bg-gray-400 relative">
+                            <div
+                                class="absolute bg-gray-700 opacity-70 flex justify-center items-center w-12 h-5 text-xs rounded-full space-x-1 right-2 bottom-2">
+                                <i class="text-white fa-solid fa-heart"></i>
+                                <span>325</span>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </main>
+        <nav class="absolute bottom-0 w-full">
+            <ul class="flex justify-around bg-gray-100 py-3 text-2xl">
+                <li><a href="friends.html">
+                        <i class="far fa-user"></i>
+                        <!-- <i class="fa-regular fa-user"></i> -->
+                    </a></li>
+                <li class="relative"><a href="chats.html">
+                        <span
+                            class="absolute p-1 left-3 bottom-4 h-6 w-6 rounded-full bg-orange-600 text-center text-2xs text-white flex justify-center items-center">
+                            1</span>
+                        <i class="far fa-comment"></i>
+                        <!-- <i class="fa-solid fa-comment"></i> -->
+                    </a></li>
+                <li><a href="find.html">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a></li>
+                <li class="relative"><a href="more.html">
+                        <span class="absolute left-6 bottom-6 h-1.5 w-1.5 rounded-full bg-orange-600">
+                        </span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/88eea5fb64.js" crossorigin="anonymous"></script>
+
+</html>

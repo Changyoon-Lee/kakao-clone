@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body class="bg-gray-400">
-    <div class="max-w-sm mx-auto h-screen bg-gray-50">
+<body class="bg-gray-400 text-gray-700">
+    <div class="relative max-w-2xl mx-auto h-screen bg-gray-50">
         <div class="flex justify-between text-xs font-medium p-1">
             <div>
                 <span>No Service</span>
@@ -29,6 +29,7 @@
             <h1 class="text-2xl font-semibold">Chats</h1>
             <div class="space-x-2 font-light">
                 <span><i class="fas fa-search fa-lg"></i></span>
+                <span><i class="far fa-comment-dots fa-lg"></i></span>
                 <span><i class="fas fa-music fa-lg"></i></span>
                 <span><i class="fas fa-cog fa-lg"></i></span>
             </div>
@@ -40,7 +41,7 @@
                     <div class="flex items-center">
                         <div class="profile__img"></div>
                         <div>
-                            <span class="text-sm mx-4 text-gray-700 font-medium">kim park</span>
+                            <span class="text-sm mx-4 font-medium">kim park</span>
                             <p class="text-xs mx-4 text-gray-400">please check My KaKao Account Info</p>
                         </div>
 
@@ -55,7 +56,7 @@
                     <div class="flex items-center">
                         <div class="profile__img"></div>
                         <div>
-                            <span class="text-sm mx-4 text-gray-700 font-medium">kim park</span>
+                            <span class="text-sm mx-4 font-medium">kim park</span>
                             <p class="text-xs mx-4 text-gray-400">please check My KaKao Account Info</p>
                         </div>
 
@@ -68,20 +69,25 @@
                 </li>
             </ul>
         </main>
-        <nav class="fixed bottom-0 right-0 left-0 max-w-sm m-auto">
+        <nav class="absolute bottom-0 w-full">
             <ul class="flex justify-around bg-gray-100 py-3 text-2xl">
                 <li><a href="friends.html">
-                        <i class="fa-solid fa-user"></i>
+                        <i class="far fa-user"></i>
                         <!-- <i class="fa-regular fa-user"></i> -->
                     </a></li>
-                <li><a href="chats.html">
-                        <i class="fa-regular fa-comment"></i>
+                <li class="relative"><a href="chats.html">
+                        <span
+                            class="absolute p-1 left-3 bottom-4 h-6 w-6 rounded-full bg-orange-600 text-center text-2xs text-white flex justify-center items-center">
+                            1</span>
+                        <i class="fas fa-comment"></i>
                         <!-- <i class="fa-solid fa-comment"></i> -->
                     </a></li>
                 <li><a href="find.html">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a></li>
-                <li><a href="settings.html">
+                <li class="relative"><a href="more.html">
+                        <span class="absolute left-6 bottom-6 h-1.5 w-1.5 rounded-full bg-orange-600">
+                        </span>
                         <i class="fa-solid fa-ellipsis"></i>
                     </a></li>
             </ul>
