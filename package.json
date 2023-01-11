@@ -4,10 +4,10 @@
   "description": "kakao clone coding with vanila js and tailwind css",
   "main": "index.js",
   "scripts": {
-    "start": "node build/init.js",
+    "start": "node build/index.js",
     "dev": "nodemon --exec babel-node src/index.js",
-    "build": "npm run build:server && npm run build:assets",
-    "build:tailwindcss": "tailwindcss -i ./css/styles.css -o ./src/public/styles.css",
+    "build": "npm run build:tailwindcss && npm run build:server",
+    "build:tailwindcss": "tailwindcss -i ./css/styles.css -o ./public/styles.css",
     "build:server": "babel src -d build",
     "build:assets": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Changyoon-Lee/kakao-clone#readme",
   "devDependencies": {
+    "@babel/cli": "^7.20.7",
     "@babel/core": "^7.20.12",
     "@babel/node": "^7.20.7",
     "@babel/preset-env": "^7.20.2",

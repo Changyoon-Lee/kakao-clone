@@ -9,6 +9,6 @@ app.use(logger);
 
 
 // app.use("/", globalRouter);
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(process.cwd() + "/public"));
 
 app.listen(3000, () => console.log("running servere on localhost:3000"));
