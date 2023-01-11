@@ -5,13 +5,10 @@ import morgan from "morgan"
 
 const app = express();
 const logger = morgan("dev");
+const port = process.env.PORT || 3000;
 app.use(logger);
 
-app.use((req, res, next) => {
-    console.log(process.cwd());
-    next();
-})
 // app.use("/", globalRouter);
 app.use(express.static(process.cwd() + "/public"));
 
-app.listen(3000, () => console.log("running servere on localhost:3000"));
+app.listen(port, () => console.log("running servere on localhost:3000"));
