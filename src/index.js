@@ -7,7 +7,10 @@ const app = express();
 const logger = morgan("dev");
 app.use(logger);
 
-
+app.use((req, res, next) => {
+    console.log(process.cwd());
+    next();
+})
 // app.use("/", globalRouter);
 app.use(express.static(process.cwd() + "/public"));
 
