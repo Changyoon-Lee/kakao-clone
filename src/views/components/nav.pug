@@ -1,0 +1,19 @@
+nav.absolute.bottom-0.w-full
+    ul.flex.justify-around.bg-gray-100.py-3.text-2xl
+        li
+            a(href='friends.html')
+            i.fas.fa-user
+            // <i class="fa-regular fa-user"></i>
+        li.relative
+            a(href='chats.html')
+            span.absolute.p-1.left-3.bottom-4.h-6.w-6.rounded-full.bg-orange-600.text-center.text-2xs.text-white.flex.justify-center.items-center
+                | 1
+            i.far.fa-comment
+            // <i class="fa-solid fa-comment"></i>
+        li
+            a(href='find.html')
+            i.fa-solid.fa-magnifying-glass
+        li.relative
+            a(href='more.html')
+            span.absolute.left-6.bottom-6.rounded-full.bg-orange-600(class='h-1.5 w-1.5')
+            i.fa-solid.fa-ellipsis
