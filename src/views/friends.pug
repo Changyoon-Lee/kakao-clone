@@ -1,4 +1,6 @@
 extends layout
+block scriptContent
+    
 
 block content 
     a.block.bg-gray-100.rounded-md.mx-3.py-1.text-center.text-xs.text-gray-300
@@ -15,19 +17,19 @@ block content
                 i.fas.fa-chevron-down.fa-xs
             p
                 .flex.justify-between.items-center.my-3
-                .flex.items-center
-                    .profile__img_sm
-                    span  channel 
-                .flex.items-center.space-x-1.text-gray-400
-                    span 2
-                    i.fas.fa-chevron-right.fa-xs
+                    .flex.items-center
+                        .profile__img_sm
+                        span  channel 
+                    .flex.items-center.space-x-1.text-gray-400
+                        span 2
+                        i.fas.fa-chevron-right.fa-xs
         details(open='')
             summary.summary_cls
                 span Friends
                 i.fas.fa-chevron-down.fa-xs
             p
                 .flex.justify-between.items-center.my-3
-                .flex.items-center
-                    .profile__img_sm
-                    span kim park
-                .rounded-full.border-green-400.border.text-2xs.px-2(class="py-0.5") Alone-하이라이트 (Highlight)
+                    .flex.items-center
+                        .profile__img_sm
+                        span kim park
+                    .rounded-full.border-green-400.border.text-2xs.px-2(class="py-0.5") Alone-하이라이트 (Highlight)
