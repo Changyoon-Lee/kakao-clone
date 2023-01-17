@@ -1,5 +1,5 @@
 export const login = (req, res) => res.sendFile(__dirname + "/public/index.html")
-export const friends = (req, res) => res.sendFile(__dirname + "/public/friends.html")
+export const friends = (req, res) => res.render("friends",)
 export const chats = (req, res) => res.sendFile(__dirname + "/public/chats.html")
 export const find = (req, res) => res.sendFile(__dirname + "/public/find.html")
 export const more = (req, res) => res.sendFile(__dirname + "/public/more.html")
