@@ -1,0 +1,39 @@
+extends layout 
+
+block content
+
+    main(class="flex flex-col mx-6 mb-10 space-y-4 animate-fade-in")
+        div(class="rounded-full bg-opacity-10 bg-gray-800 text-xs px-3 py-1 mx-auto") Tuesday, June 30, 2020
+            
+        div(class="flex")
+            div(class="profile__img_md") 
+
+            div(class="") 
+                div(class="text-gray-500 mb-1") Nicolas
+                ul(class="flex flex-col space-y-2") 
+                    li(class="flex items-end space-x-2") 
+                        div(class="left-chat ") Hi!
+                        div(class="pb-1 text-2xs") 21:27 
+                    li(class="flex items-end space-x-2") 
+                        div(class="bg-white rounded-xl py-1 px-2") im fine thank you!
+                        div(class="pb-1 text-2xs") 21:27
+        
+        div(class="flex justify-end")
+            div(class="")
+                ul(class="flex flex-col space-y-2")
+                    li(class="flex justify-end items-end space-x-2")
+                        div(class="pb-1 text-2xs") 21:27
+                        div(class="right-chat") Hi!
+                    li(class="flex justify-end items-end space-x-2")
+                        div(class="pb-1 text-2xs") 21:27
+                        div(class="bg-yellow-300 rounded-xl py-1 px-2") me too
+    form(class="absolute bottom-0 h-16 right-0 left-0 max-w-2xl m-auto flex justify-between bg-white items-center group")
+        div(class="mr-4 text-2xl text-gray-600 group-focus-within:w-0 group-focus-within:opacity-0 transition-all")
+            i(class="ml-4 far fa-plus-square fa-lg")
+        
+        div(class="w-10/12 group-focus-within:w-11/12 transition-width flex mr-4 items-center space-x-3 justify-between border-gray-300 border bg-gray-100 rounded-full p-1")
+            input(class="flex-1 bg-transparent" type="text" placeholder="Write a message...")
+            div(class="space-x-2")
+                i(class="far fa-smile-wink fa-lg")
+                button(class="bg-yellow-300 rounded-full w-8 p-1")
+                    i(class="fas fa-arrow-up")

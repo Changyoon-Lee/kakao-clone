@@ -9,11 +9,15 @@ head
 body.max-w-xl.mx-auto.text-gray-700.h-screen(class="max-h-[1000px]")
     .relative.bg-gray-50.h-full
         include components/statusBar
-
-        include components/header
-        block content
-
-        include components/nav
+        
+        if pageType == "login"
+            block loginContent 
+        else
+            include components/header
+            block content
+            
+            if pageType !== "chatroom"
+                include components/nav
 block scriptContent
 script(src='https://kit.fontawesome.com/88eea5fb64.js' crossorigin='anonymous')
 script(src='/statusBar.js')

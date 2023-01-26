@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     './public/*.html',
-    './src/views/*.pug'],
+    './src/views/**/*.pug'],
   theme: {
     extend: {
       transitionProperty: {

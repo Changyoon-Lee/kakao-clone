@@ -17,7 +17,6 @@ const conn = navigator.connection || navigator.mozConnection || navigator.webkit
 function updateConnectionStatus() {
     let message = "";
     let iconClassName;
-    console.log(conn);
     if (!conn) { message = "no data"; }
     if (typeof (conn.type) != "undefined") {
         if (conn.type === "wifi") {
@@ -35,7 +34,6 @@ function updateConnectionStatus() {
         message = "no info";
         iconClassName = "";
     }
-    console.log(wifiStatus.innerText)
     wifiStatus.innerText = message;
     wifiStatusIcon.className = iconClassName;
 }
@@ -44,21 +42,31 @@ updateConnectionStatus();
 conn.addEventListener("change", updateConnectionStatus)
 
 // 배터리 관련 status
-const batteryStatus = document.querySelector("#battery span");
-const chargeStatus = document.querySelector("#battery div:last-child");
 const updateBatteryStatus = (battery) => {
-    batteryStatus.innerText = parseInt(battery.level * 100).toString() + "%";
-}
-const updateChargeStatus = (battery) => {
-    if (!battery.charging) {
-        chargeStatus.classList.add("hidden");
+    const batteryStatus = document.querySelector("#battery span");
+    const batteryStatusIcon = document.querySelector("#battery i");
+    const chargeStatus = document.querySelector("#battery i:last-child");
+    console.log(batteryStatusIcon)
+    const batteryPercentage = parseInt(battery.level * 100);
+    batteryStatus.innerText = batteryPercentage.toString() + "%"
+    if (battery.charging) {
+        chargeStatus.className = "fa-solid fa-bolt";
     } else {
-        chargeStatus.classList.remove("hidden");
+        chargeStatus.className = "";
+        batteryStatusIcon.className = batteryPercentage > 80
+            ? "fa-solid fa-battery-full"
+            : batteryPercentage > 60
+                ? "fa-solid fa-battery-three-quarters"
+                : batteryPercentage > 40
+                    ? "fa-solid fa-battery-three-quarters"
+                    : batteryPercentage > 10
+                        ? "fa-solid fa-battery-quarter"
+                        : "fa-solid fa-battery-empty"
     }
 }
+
 navigator.getBattery().then((battery) => {
     updateBatteryStatus(battery);
-    updateChargeStatus(battery);
-    battery.addEventListener("onchargingchange", () => updateChargeStatus(battery));
-    battery.addEventListener("onlevelchange", () => updateBatteryStatus(battery));
+    battery.onchargingchange = () => updateBatteryStatus(battery);
+    battery.onlevelchange = () => updateBatteryStatus(battery);
 });

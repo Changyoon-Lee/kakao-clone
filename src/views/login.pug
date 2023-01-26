@@ -1,0 +1,16 @@
+extends layout 
+
+block loginContent
+    main(class="flex flex-col")
+        div(class="flex flex-col justify-center my-16")
+            h3(class="text-center text-gray-800 font-semibold text-xl mb-3") Welcome to KakaoTalk
+            p(class="text-center text-gray-500 text-sm") If you have a Kakao Account
+            p(class="text-center text-gray-500 text-sm") log in with your email or phone number.
+
+        div 
+            form(action="/" method="post" class="flex flex-col mx-5")
+                input(type="text" name="username" class="form_input" placeholder="Email or phone number")
+                input(type="password" name="password" class="form_input" placeholder="Password")
+                input(type="submit" class="form_submit" value="Log In")
+                a(href="/" class="text-center text-xs hover:underline") Find Kokoa Account or Password
+                a(href="/signup" class="text-center text-xs hover:underline text-cyan-700") Create Account

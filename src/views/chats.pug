@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    main(class="flex flex-col mx-3 divide-y mb-10")
+        ul 
+            each val in [1,2,3,4]
+                li(val=val class="hover:bg-gray-200 px-3 py-3")
+                    a(class="flex justify-between" href=`/chats/${val}`)
+                        div(class="flex items-center")
+                            div(class="profile__img")
+                            div
+                                span(class="text-sm mx-4 font-medium") kim park
+                                p(class="text-xs mx-4 text-gray-400") please check My KaKao Account Info
+
+                        div(class="flex flex-col items-end justify-center")
+                            span(class="text-xs text-gray-400 mb-1") 21:22
+                            span(class="h-6 pt-2.5 px-2.5 line rounded-full bg-orange-600 text-center text-2xs text-white") 1

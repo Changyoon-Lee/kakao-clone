@@ -1,0 +1,15 @@
+extends layout 
+
+block loginContent
+    main(class="flex flex-col")
+        div(class="flex flex-col justify-center my-16")
+            h3(class="text-center text-gray-800 font-semibold text-xl mb-3") Welcome to KakaoTalk
+            p(class="text-center text-gray-500 text-sm") If you don't have a Kakao Account
+            p(class="text-center text-gray-500 text-sm") sign up with your id and password.
+
+        div 
+            form(action="/signup" method="post" class="flex flex-col mx-5")
+                input(type="text" name="username" class="form_input" placeholder="Email or phone number")
+                input(type="password" name="password" class="form_input" placeholder="Password")
+                input(type="submit" class="form_submit" value="Create Account")
+                a(href="/" class="text-center text-xs hover:underline") Want to Go Login Page?
